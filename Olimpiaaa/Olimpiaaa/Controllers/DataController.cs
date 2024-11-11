@@ -37,9 +37,17 @@ namespace Olimpiaaa.Controllers
         [HttpGet]
         public ActionResult<Data> get()
         {
-            using ( var context = new OlimpiaContext())
+            using (var context = new OlimpiaContext())
             {
                 return Ok(context.Datas.ToList());
+            }
+        }
+        [HttpGet("byId")]
+        public ActionResult<Data> getById(Guid id)
+        {
+            using (var context = new OlimpiaContext())
+            {
+                return Ok(context.Datas.Where(x=>x.Id == id).ToList());
             }
         }
         [HttpPut]
