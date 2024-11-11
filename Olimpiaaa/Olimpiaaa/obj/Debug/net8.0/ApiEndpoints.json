@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "Olimpiaaa.Controllers.DataController",
+    "Method": "post",
+    "RelativePath": "Data",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createDataDTO",
+        "Type": "Olimpiaaa.Models.DTOs\u002BcreateDataDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Olimpiaaa.Models.Data",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Olimpiaaa.Controllers.PlayerController",
     "Method": "post",
     "RelativePath": "Player",
