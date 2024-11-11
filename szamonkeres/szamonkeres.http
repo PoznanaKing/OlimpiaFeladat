@@ -1,0 +1,6 @@
+@szamonkeres_HostAddress = http://localhost:5231
+
+GET {{szamonkeres_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
