@@ -26,6 +26,57 @@
     ]
   },
   {
+    "ContainingType": "Olimpiaaa.Controllers.DataController",
+    "Method": "get",
+    "RelativePath": "Data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Olimpiaaa.Models.Data",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Olimpiaaa.Controllers.DataController",
+    "Method": "put",
+    "RelativePath": "Data",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "updateDataDTO",
+        "Type": "Olimpiaaa.Models.DTOs\u002BupdateDataDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Olimpiaaa.Models.Data",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "Olimpiaaa.Controllers.PlayerController",
     "Method": "post",
     "RelativePath": "Player",

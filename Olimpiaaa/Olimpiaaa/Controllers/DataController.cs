@@ -34,5 +34,36 @@ namespace Olimpiaaa.Controllers
             }
             return BadRequest();
         }
+        [HttpGet]
+        public ActionResult<Data> get()
+        {
+            using ( var context = new OlimpiaContext())
+            {
+                return Ok(context.Datas.ToList());
+            }
+        }
+        [HttpPut]
+        public ActionResult<Data> put(Guid id,updateDataDto updateDataDTO)
+        {
+            using (var context = new OlimpiaContext())
+            {
+                var existingData= context.Datas.FirstOrDefault(x=>x.Id==id);
+                if(existingData != null)
+                {
+
+                    existingData.Country = updateDataDTO.country;
+                    existingData.County = updateDataDTO.county;
+                    existingData.Description = updateDataDTO.description;
+                    existingData.UpdatedTime = DateTime.Now;
+
+                    context.Datas.Update(existingData);
+                    context.SaveChanges();
+                    return StatusCode(200, existingData);
+                }
+                return NotFound();
+            }
+        }
+
     }
+
 }
