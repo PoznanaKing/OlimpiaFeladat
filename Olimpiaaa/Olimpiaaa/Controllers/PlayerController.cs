@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Olimpiaaa.Models;
 using static Olimpiaaa.Models.DTOs;
 
@@ -32,6 +33,14 @@ namespace Olimpiaaa.Controllers
                 
             }
             return BadRequest();
+        }
+        [HttpGet]
+        public ActionResult<Player> get()
+        {
+            using (var context = new OlimpiaContext())
+            {
+                return Ok(context.Players.Include(x => x.Data).ToList());
+            }
         }
 
     }

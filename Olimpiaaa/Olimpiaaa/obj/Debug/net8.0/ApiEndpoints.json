@@ -50,5 +50,25 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Olimpiaaa.Controllers.PlayerController",
+    "Method": "get",
+    "RelativePath": "Player",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Olimpiaaa.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
