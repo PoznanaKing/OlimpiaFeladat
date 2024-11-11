@@ -256,5 +256,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Olimpiaaa.Controllers.PlayerController",
+    "Method": "get",
+    "RelativePath": "Player/playerData/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Olimpiaaa.Models.limitedClass",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

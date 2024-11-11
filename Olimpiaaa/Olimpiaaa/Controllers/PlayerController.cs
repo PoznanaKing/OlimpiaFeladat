@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Olimpiaaa.Models;
 using static Olimpiaaa.Models.DTOs;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Olimpiaaa.Controllers
 {
@@ -83,6 +84,37 @@ namespace Olimpiaaa.Controllers
                     return StatusCode(200, new { message = "Sikeres törlés!" });
                 }
                 return NotFound(new { message = "Sikertelen törlés" });
+            }
+        }
+        [HttpGet("playerData/{id}")]
+        public ActionResult<limitedClass> get(Guid id)
+        {
+            using (var context = new OlimpiaContext())
+            {
+                var player = context.Players.Include(x=>x.Data).FirstOrDefault(x=> x.Id==id);
+                var data = context.Datas.FirstOrDefault(x => x.PlayerId == id); 
+                List<string> jegyzetek = new List<string>();
+                foreach (var item in context.Datas)
+                {
+                    if (item.PlayerId == id)
+                    {
+                        jegyzetek.Add(item.Description);
+                    }
+                }
+
+                var limitedPlayerOutput = new limitedClass
+                {
+                    Name = player.Name,
+                    Country = data.Country,
+                    county = data.County,
+                    descriptions = jegyzetek
+                };
+                
+                if (player != null)
+                {
+                    return Ok(limitedPlayerOutput);
+                }
+                return NotFound();
             }
         }
     }
