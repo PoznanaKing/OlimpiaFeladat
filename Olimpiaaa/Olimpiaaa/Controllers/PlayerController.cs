@@ -16,11 +16,11 @@ namespace Olimpiaaa.Controllers
             var newPlayer = new Player
             {
                 Id = Guid.NewGuid(),
-                Name=createPlayerDTO.name,
-                Age=createPlayerDTO.age,
-                Weight=createPlayerDTO.weight,
-                Height=createPlayerDTO.height,
-                CreatedTime=DateTime.Now,
+                Name = createPlayerDTO.name,
+                Age = createPlayerDTO.age,
+                Weight = createPlayerDTO.weight,
+                Height = createPlayerDTO.height,
+                CreatedTime = DateTime.Now,
             };
             if (newPlayer != null)
             {
@@ -30,7 +30,7 @@ namespace Olimpiaaa.Controllers
                     context.SaveChanges();
                     return StatusCode(201, newPlayer);
                 }
-                
+
             }
             return BadRequest();
         }
@@ -47,9 +47,28 @@ namespace Olimpiaaa.Controllers
         {
             using (var context = new OlimpiaContext())
             {
-                return Ok(context.Players.Where(x => x.Id == id).Include(x=>x.Data).ToList());
+                return Ok(context.Players.Where(x => x.Id == id).Include(x => x.Data).ToList());
             }
         }
+        [HttpPut]
+        public ActionResult<Player> put(Guid id, updatePlayerDTO player)
+        {
+            using (var context = new OlimpiaContext())
+            {
+                var existingPlayer = context.Players.FirstOrDefault(x => x.Id == id);
+                if (existingPlayer != null)
+                {
+                    existingPlayer.Name = player.name;
+                    existingPlayer.Age = player.age;
+                    existingPlayer.Weight = player.weight;
+                    existingPlayer.Height = player.height;
 
+                    context.Players.Update(existingPlayer);
+                    context.SaveChanges();
+                    return StatusCode(200, existingPlayer);
+                }
+                return NotFound();
+            }
+        }
     }
 }

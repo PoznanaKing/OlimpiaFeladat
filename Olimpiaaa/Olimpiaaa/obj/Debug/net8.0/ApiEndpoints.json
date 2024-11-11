@@ -150,6 +150,37 @@
   },
   {
     "ContainingType": "Olimpiaaa.Controllers.PlayerController",
+    "Method": "put",
+    "RelativePath": "Player",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "player",
+        "Type": "Olimpiaaa.Models.DTOs\u002BupdatePlayerDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Olimpiaaa.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Olimpiaaa.Controllers.PlayerController",
     "Method": "getById",
     "RelativePath": "Player/byId",
     "HttpMethod": "GET",
