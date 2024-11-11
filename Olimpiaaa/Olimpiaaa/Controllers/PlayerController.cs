@@ -42,6 +42,14 @@ namespace Olimpiaaa.Controllers
                 return Ok(context.Players.Include(x => x.Data).ToList());
             }
         }
+        [HttpGet("byId")]
+        public ActionResult<Player> getById(Guid id)
+        {
+            using (var context = new OlimpiaContext())
+            {
+                return Ok(context.Players.Where(x => x.Id == id).Include(x=>x.Data).ToList());
+            }
+        }
 
     }
 }
