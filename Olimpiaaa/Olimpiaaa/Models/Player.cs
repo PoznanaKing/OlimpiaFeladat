@@ -5,7 +5,7 @@ namespace Olimpiaaa.Models;
 
 public partial class Player
 {
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; }
 
     public string Name { get; set; } = null!;
 

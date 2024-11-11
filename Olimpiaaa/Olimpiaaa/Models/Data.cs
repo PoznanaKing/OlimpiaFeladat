@@ -5,7 +5,7 @@ namespace Olimpiaaa.Models;
 
 public partial class Data
 {
-    public string Id { get; set; } = null!;
+    public Guid Id { get; set; }
 
     public string Country { get; set; } = null!;
 
@@ -17,7 +17,7 @@ public partial class Data
 
     public DateTime UpdatedTime { get; set; }
 
-    public string PlayerId { get; set; } = null!;
+    public Guid PlayerId { get; set; }
 
     public virtual Player Player { get; set; } = null!;
 }
