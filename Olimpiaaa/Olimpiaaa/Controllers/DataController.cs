@@ -63,6 +63,22 @@ namespace Olimpiaaa.Controllers
                 return NotFound();
             }
         }
+        [HttpDelete]
+        public ActionResult<Data> delete(Guid id)
+        {
+            using (var context = new OlimpiaContext())
+            {
+                var deletingData= context.Datas.FirstOrDefault(x=>x.Id == id);
+                if(deletingData != null)
+                {
+                    context.Datas.Remove(deletingData);
+                    context.SaveChanges();
+                    return StatusCode(200, new { message = "Sikeres törlés!" });
+                }
+                return NotFound(new { message = "Sikertelen törlés!" });
+            }
+            
+        }
 
     }
 
