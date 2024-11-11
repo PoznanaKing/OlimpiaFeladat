@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{EBD556ED-DD18-4BB0-AAA8-69099B8FD9CF}|Olimpiaaa\\Olimpiaaa.csproj|solutionrelative:olimpiaaa\\controllers\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|Solution Items{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|C:\\Users\\Tanulo\\source\\repos\\Olimpiaaa\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|Solution Items{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EBD556ED-DD18-4BB0-AAA8-69099B8FD9CF}|Olimpiaaa\\Olimpiaaa.csproj|c:\\users\\tanulo\\source\\repos\\olimpiaaa\\olimpiaaa\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EBD556ED-DD18-4BB0-AAA8-69099B8FD9CF}|Olimpiaaa\\Olimpiaaa.csproj|solutionrelative:olimpiaaa\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|Solution Items{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|C:\\Users\\Tanulo\\source\\repos\\Olimpiaaa\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|Solution Items{EE9C3C18-9C80-4077-8EC4-BB0A2049D0B9}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EBD556ED-DD18-4BB0-AAA8-69099B8FD9CF}|Olimpiaaa\\Olimpiaaa.csproj|c:\\users\\tanulo\\source\\repos\\olimpiaaa\\olimpiaaa\\models\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "DataController.cs",
               "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\Olimpiaaa\\Olimpiaaa\\Controllers\\DataController.cs",
               "RelativeDocumentMoniker": "Olimpiaaa\\Controllers\\DataController.cs",
               "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\Olimpiaaa\\Olimpiaaa\\Controllers\\DataController.cs",
               "RelativeToolTip": "Olimpiaaa\\Controllers\\DataController.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAQwE0AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwEsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T08:21:13.919Z",
               "EditorCaption": ""
@@ -70,7 +70,7 @@
               "RelativeDocumentMoniker": "Olimpiaaa\\Controllers\\PlayerController.cs",
               "ToolTip": "C:\\Users\\Tanulo\\source\\repos\\Olimpiaaa\\Olimpiaaa\\Controllers\\PlayerController.cs*",
               "RelativeToolTip": "Olimpiaaa\\Controllers\\PlayerController.cs*",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAgwEgAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAnwEkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-11T08:15:12.23Z",
               "EditorCaption": ""
@@ -103,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Tanulo\\source\\repos\\Olimpiaaa\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
